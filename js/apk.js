@@ -108,9 +108,7 @@ function stop(){
 }
 
 
-
 // verifica se a resposta está correta
-
 function getResult(element){
 	const id = parseInt(element.id);
 	
