@@ -34,19 +34,21 @@ body{
 
 .home-box h3{
 	font-size: 18px;
-	font-weight: 500; //?
-	color: #000000; //?
-	margin-bottom: 15px;//?
-	line-height: 25px;//?
+	font-weight: 500; 
+	color: #000000; 
+	margin-bottom: 15px;
+	line-height: 25px;
 }
 
 .home-box p{
 	font-size: 18px;
-	font-weight: 500; //?
-	color: #000000; //?
-	margin-bottom: 15px;//?
-	line-height: 25px;//?
+	font-weight: 500; 
+	color: #000000; 
+	margin-bottom: 15px;
+	line-height: 25px;
 }
+
+
 
 .btn{
 	
@@ -87,8 +89,7 @@ body{
 .quiz-box .option-container,
 .quiz-box .next-question-btn,
 .quiz-box .answers-indicator{
-/*width: 100%;
-	float: left;*/
+
 }
 
 
@@ -99,9 +100,8 @@ body{
 	font-weight: 600;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #cccccc;
-
-
 }
+
 .quiz-box .question-text{
 	font-size: 25px;
 	color: #000000;
@@ -124,7 +124,7 @@ body{
 	cursor: pointer;
 	text-transform: capitalize;
 	animation: fadeIn 1s ease forwards;
-	position: relative; /* position e overflow foi usdado para enquadrar a cor dentro da opção*/
+	position: relative; /* position e overflow foi usado para enquadrar a cor dentro da opção*/
 	overflow: hidden;
 	
 }

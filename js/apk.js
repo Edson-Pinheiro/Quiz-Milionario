@@ -83,43 +83,22 @@ for (let i=0 ; i<optionLen ; i ++){
 
 
 function next(){
+	
 	if (questionCounter === quiz.length){
-		ultimaP();
-		
+				
 		console.log("estourou o vetor");
 		
 	}
 	else {
 		getNewQuestion();
-		answersIndicatorConteiner.innerHTML = '';   // limpa tela
+		
 	}
 
 }
 
 var premio = 0;
 function stop(){
-	if (questionCounter == 6){
-		    premio -= 10
-		}
-		if ((questionCounter > 6)&&(questionCounter <=10)) {
-            premio -=10;
-        }
-		
-		if (questionCounter == 11){
-		    premio -= 100
-		}
-		
-		if ((questionCounter > 11)&&(questionCounter <=15)) {
-            premio -=100;
-        }
-		if (questionCounter ==16)
-			premio = 500;
-		
-		if (questionCounter <6)
-			premio --;
-		
-		if (premio < 0) 
-			premio = 0;
+
 	
 	answersIndicatorConteiner.innerHTML = " Seu prémio é de " + premio + " mil " ;
    	closeBox.classList.add("hide"); // fecha a tela de perguntas.
@@ -139,8 +118,10 @@ function getResult(element){
 		console.log(" Certa resposta! :)");
 		element.classList.add("correta");
 		
-		// roda na question correta
-		
+		// Atualisa o prémio
+		if (questionCounter <6){
+			premio ++;
+		}
 		if (questionCounter == 6){
 		    premio = 10
 		}
@@ -155,32 +136,36 @@ function getResult(element){
 		if ((questionCounter > 11)&&(questionCounter <=15)) {
             premio +=100;
         }
-		if (questionCounter ==16){
+		if (questionCounter ==16){ // Pergunta de  1 milhão
+			if (premio===500){
 			premio *=2;
-		
+		    
 			finalBox.classList.remove("hide");
 	        finalBox.querySelector(".total-premio").innerHTML =" 1 MILHÃO DE REAIS! Parabens!!! ";
-			 document.querySelector(".next-question-btn").remove();// remove os button para encerrar o jogo
-            	
-
-		
-		
+			document.querySelector(".next-question-btn").remove();// remove os button para encerrar o jogo
+			}
 		}
-		if (questionCounter <6)
-			premio ++;
-		answersIndicatorConteiner.innerHTML = " Certa resposta! seu prémio atual é de " + premio + " mil!" ;
-		
-		
+		if (questionCounter ==16){
+		answersIndicatorConteiner.innerHTML = " Certa resposta!";
+		//answersIndicatorConteiner.innerHTML = " seu prémio atual é de " + premio + " mil!" ;
+		}
+		else {
+			answersIndicatorConteiner.innerHTML = " Certa resposta!" + " seu prémio atual é de " + premio + " mil!" ;
+
+		}
 		
 	
 		
 	}
-	else{
+	else{ // ERRADA
 		console.log(" Resposta errada. :(");
 		element.classList.add("errada");
 		premio = premio /2; // divide o prémio se errar
-		answersIndicatorConteiner.innerHTML = " Você errou! Seu prémio é de " + premio + " mil !" ;
-    // ERRADA
+		answersIndicatorConteiner.innerHTML = " Resposta errada. Seu prémio é de " + premio + " mil !" ;
+        if (questionCounter ==16){
+			premio=0;
+			answersIndicatorConteiner.innerHTML = " Você errou! Que pena, perdeu tudo! Tente mais uma vez! :)";
+		}
 	
 		
 		
@@ -229,6 +214,6 @@ window.onload = function(){
 	getNewQuestion();
 
 	
-	//ultimaP();
+	
 	
 }
