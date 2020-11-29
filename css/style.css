@@ -3,7 +3,7 @@
 body{
 	margin: 0;
 	font-size: 20px;
-	background-color: #5B5EA6;
+	background-color: #ffffff;
 }
 
 *{
@@ -19,7 +19,7 @@ body{
 
 .custom-box{
 	max-width: 700px;
-	background-color: #BC243C;
+	background-color: #888886b8;
 	margin: 40px auto;
 	padding: 30px;
 	border-radius: 10px;
@@ -114,7 +114,7 @@ body{
 .quiz-box .option-container{}
 
 .quiz-box .option-container .option{
-	background-color: #cccccc;
+	background-color: #ffffff;
 	padding: 15px;
 	font-size: 20px;
 	line-height: 22px;

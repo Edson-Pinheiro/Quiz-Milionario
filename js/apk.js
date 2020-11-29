@@ -22,7 +22,7 @@ let availableOptions = []; // array para listar as respostas
 
 
 function setAvailableQuestions(){
-	const totalquestion = quiz.length; // tirar??
+	const totalquestion = quiz.length; //quiz é o array json do documento question.js
 	for(let i=0; i < totalquestion; i++){
 		availableQuestions.push(quiz[i]);
 		//console.log(quiz[i],quizV);
@@ -37,7 +37,7 @@ function getNewQuestion(){
 	
 	const questionIndex = availableQuestions[questionCounter];
 	currentQuestion = questionIndex;
-	questionText.innerHTML = currentQuestion.q; // aqui mostra pergunta na tela
+	questionText.innerHTML = currentQuestion.q; // aqui mostra pergunta na tela apontando ao 'q' do documento 'question.js'
 	console.log(questionIndex)
 	
 	const optionLen = currentQuestion.options.length;
