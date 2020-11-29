@@ -12,7 +12,7 @@ body{
 	padding:0;
 	outline: nome;
 	font-family: 'Bangers', cursive;
-	font-size: 20px;
+	font-size: 25px;
 	color: #000000;
 
 }
@@ -20,8 +20,8 @@ body{
 .custom-box{
 	max-width: 700px;
 	background-color: #888886b8;
-	margin: 40px auto;
-	padding: 30px;
+	margin: 30px auto;
+	padding: 8px;
 	border-radius: 10px;
 	
 }
@@ -215,11 +215,11 @@ body{
 }
 
 @keyframes example {
-  0%   {background-color:#cccccc; left:0px; top:0px;}
+  /*0%   {background-color:#cccccc; left:0px; top:0px;}*/
   25%  {background-color:#ffff66; left:200px; top:0px;}
   50%  {background-color:#6699ff; left:200px; top:200px;}
   75%  {background-color:#66ff66; left:0px; top:200px;}
-  100% {background-color:#ffa64d; left:0px; top:0px;}
+  100% {background-color:#ff3301; left:0px; top:0px;}
 }
 
 
