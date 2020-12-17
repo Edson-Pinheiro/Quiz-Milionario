@@ -105,6 +105,7 @@ function stop(){
     
 	finalBox.classList.remove("hide");
 	finalBox.querySelector(".total-premio").innerHTML = premio + " mil";
+	
 }
 
 

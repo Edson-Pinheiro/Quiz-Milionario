@@ -3,7 +3,10 @@
 body{
 	margin: 0;
 	font-size: 20px;
+	height: 610px; /*547px*/
 	background-color: #ffffff;
+	/*background-image: linear-gradient(to bottom right, #ccffff, black);*/
+	background-image: linear-gradient(to bottom right, #003b3b, #6c6f6e4a);
 }
 
 *{
@@ -60,6 +63,7 @@ body{
 	font-size:16px;
 	cursor: pointer;
     display: inherit;	/* ou display: inline-block */
+	position:static; 
 	
 }
 
@@ -74,10 +78,37 @@ body{
 	cursor: pointer;
     display: inherit;	/* ou display: inline-block */
 	float: right;
-	margin-top: -41px;
+	margin-top: -40px;
+	position:relative; 
 	
 }
 
+
+.btnReset{
+	
+	padding: 1px 45px;
+	background-color: #6c6f6e;
+	color: #ffffff;
+	border: nome;
+	border-radius: 5px;
+	font-size:16px;
+	cursor: pointer;
+    /*  display: inline-block */
+	position:absolute; 
+    top:97.5%;
+    left:50%;
+    transform: translate(-50%, -50%);
+	
+    
+
+
+
+}
+
+.button:hover {opacity: 1}
+.btnReset:active {
+  background-color: #66ff66;
+ }
 
 .home-box .btn{
 	margin-top:20px;
