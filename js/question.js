@@ -8,7 +8,7 @@ var quiz = [
 },
 {
 	q:'Qual é o nome do cavalo do desenho O Show do Pica-Pau?',
-	options:['Rafael','Pé de pano','Cavalo de fogo','Bolsonaro'],
+	options:['Pé de cana','Pé de pano','Cavalo de fogo','Mula sem cabeça'],
 	answer:1
 },
 {

@@ -6,6 +6,7 @@ const optionContainer = document.querySelector (".option-container");
 const answersIndicatorConteiner = document.querySelector(".answers-indicator");
 const closeBox = document.querySelector(".quiz-box");
 const finalBox = document.querySelector(".final-box");
+const finalBox2 = document.querySelector(".final-box2"); // apenas para resposta errada
 const homeBox = document.querySelector(".home-box");
 const btn = document.querySelector(".next-question-btn");
 
@@ -106,6 +107,7 @@ function stop(){
 	finalBox.classList.remove("hide");
 	finalBox.querySelector(".total-premio").innerHTML = premio + " mil";
 	
+	document.getElementById("author").innerHTML='Desenvolvido por @Edson Pinheiro';
 }
 
 
@@ -136,12 +138,18 @@ function getResult(element){
             premio +=100;
         }
 		if (questionCounter ==16){ // Pergunta de  1 milhão
-			if (premio===500){
+			if (premio===500){ 
 			premio *=2;
-		    
-			finalBox.classList.remove("hide");
-	        finalBox.querySelector(".total-premio").innerHTML =" 1 MILHÃO DE REAIS! Parabens!!! ";
+			
+		    setTimeout(function() { finalBox.classList.remove("hide");}, 1000);
+			//finalBox.classList.remove("hide");
+			setTimeout(function() { closeBox.classList.add("hide");}, 1000);
+			//setTimeout(function() { closeBox.classList.add("hide");}, 10000);
+			setTimeout(function() { finalBox.querySelector(".total-premio").innerHTML =" 1 MILHÃO DE REAIS! ";}, 3500);
+	        
 			document.querySelector(".next-question-btn").remove();// remove os button para encerrar o jogo
+			
+			document.getElementById("author").innerHTML='Desenvolvido por @Edson Pinheiro';
 			}
 		}
 		if (questionCounter ==16){
@@ -154,7 +162,7 @@ function getResult(element){
 		}
 		
 	
-		
+			
 	}
 	else{ // ERRADA
 		console.log(" Resposta errada. :(");
@@ -176,11 +184,13 @@ function getResult(element){
 				
 			 document.querySelector(".next-question-btn").remove();// remove os button para encerrar o jogo
 			 //closeBox.classList.add("hide"); // fecha a tela de perguntas.
-			 finalBox.classList.remove("hide");
+			 finalBox2.classList.remove("hide");
 	         finalBox.querySelector(".total-premio").innerHTML = premio + " mil";
              
 			}
 		}
+		
+		document.getElementById("author").innerHTML='Desenvolvido por @Edson Pinheiro';
 
 
 	}

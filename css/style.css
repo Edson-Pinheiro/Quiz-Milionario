@@ -3,10 +3,10 @@
 body{
 	margin: 0;
 	font-size: 20px;
-	height: 610px; /*547px*/
+	height: 547px; /*547px*/
 	background-color: #ffffff;
 	/*background-image: linear-gradient(to bottom right, #ccffff, black);*/
-	background-image: linear-gradient(to bottom right, #003b3b, #6c6f6e4a);
+	background-image: linear-gradient(to bottom right, #6c6f6e4a, #003b3b);
 }
 
 *{
@@ -30,8 +30,11 @@ body{
 }
 
 
-
 .custom-box.hide{
+	display: none;
+}
+
+.custom-box2.hide{
 	display: none;
 }
 
@@ -86,12 +89,12 @@ body{
 
 .btnReset{
 	
-	padding: 1px 45px;
-	background-color: #6c6f6e;
+	padding: 1px 4px;
+	background-color: #6c6f6e00; /*#6c6f6e;*/
 	color: #ffffff;
 	border: nome;
 	border-radius: 5px;
-	font-size:16px;
+	font-size:19px;
 	cursor: pointer;
     /*  display: inline-block */
 	position:absolute; 
@@ -99,16 +102,25 @@ body{
     left:50%;
     transform: translate(-50%, -50%);
 	
-    
-
-
-
+   
 }
 
 .button:hover {opacity: 1}
 .btnReset:active {
   background-color: #66ff66;
  }
+ 
+ #author{	
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+	height: 39px;
+    font-size: 10px;
+	color: #232927; 
+	
+}
+ 
+ 
 
 .home-box .btn{
 	margin-top:20px;
