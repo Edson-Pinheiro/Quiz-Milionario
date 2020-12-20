@@ -27,7 +27,7 @@ var quiz = [
 	answer:3
 },
 {                      // nível B - vale 10k
-	q:'Qual é a forma da molécula de água?',
+	q:'Qual é a fórmula da molécula da água?',
 	options:['H2O','CO2','CH4','TCC'],
 	answer:0
 },

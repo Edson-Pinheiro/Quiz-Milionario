@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 body{
-	margin: 0;
+	margin: 4px;
 	font-size: 20px;
-	height: 547px; /*547px*/
+	height: 533px ; /*547px, 596px  , 538px*/
 	background-color: #ffffff;
-	/*background-image: linear-gradient(to bottom right, #ccffff, black);*/
-	background-image: linear-gradient(to bottom right, #6c6f6e4a, #003b3b);
+	background-image: linear-gradient(to bottom right, #ccffff, #003b3b  200%);
+	/*background-image: linear-gradient(to bottom right, #ccffff, black);
+	  background-image: linear-gradient(150deg, #97c74e 0%, #2ab9a5 );*/
+	
 }
 
 *{
 	box-sizing: border-box;
-	margin:0;
-	padding:0;
+	margin:0px;
+	padding:0px;
 	outline: nome;
 	font-family: 'Bangers', cursive;
 	font-size: 25px;
@@ -23,8 +25,8 @@ body{
 .custom-box{
 	max-width: 700px;
 	background-color: #888886b8;
-	margin: 30px auto;
-	padding: 8px;
+	margin: 40px auto;
+	padding: 30px;
 	border-radius: 10px;
 	
 }
@@ -81,8 +83,7 @@ body{
 	cursor: pointer;
     display: inherit;	/* ou display: inline-block */
 	float: right;
-	margin-top: -40px;
-	position:relative; 
+	margin-top: -41px;
 	
 }
 
@@ -146,14 +147,15 @@ body{
 }
 
 .quiz-box .question-text{
-	font-size: 25px;
+	font-size: 22px;
 	color: #000000;
-	line-height: 28px;
+	line-height: 22px;
 	font-weight: 400;
-	padding: 20px 0;
+	padding: 10px 0;
 	margin:0;
 
 }
+
 .quiz-box .option-container{}
 
 .quiz-box .option-container .option{
@@ -233,8 +235,8 @@ body{
 }
 
 .quiz-box .answers-indicator {
-	border-top: 2px solid #cccccc;
-	margin: 10px;
+
+	margin: 1px;
 	text-align: center;
 	padding-top: 10px;
 }
