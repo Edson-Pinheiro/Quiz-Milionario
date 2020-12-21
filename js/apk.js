@@ -11,8 +11,6 @@ const homeBox = document.querySelector(".home-box");
 const btn = document.querySelector(".next-question-btn");
 
 
-
-
 //const resultBox = document.querySelector(".result-box");
 
 //declaração das variavies locais

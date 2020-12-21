@@ -1,6 +1,5 @@
 //listas de perguntas(array de objetos)
 var quiz = [
-
 {//1                   nível A - vale 1k
 	q:'Onde reina o personagem Pantera Negra?',
 	options:['Cidade de Deus','Paris','Wakanda','Bahia'],
