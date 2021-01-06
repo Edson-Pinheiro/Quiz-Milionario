@@ -25,7 +25,7 @@ This web application consists of several fictional prizes in Rais (BRL) and was 
 ![Web 2](Screenshots/w03.PNG)
 
 ## Layout mobile
-![Mobile 1](Screenshots/01.jpeg) ![Mobile 2](Screenshots/02.jpeg)![mobile 3](Screenshots/03.jpeg)! [mobile 4](Screenshots/04.jpeg)
+![Mobile 1](Screenshots/01.jpeg) ![Mobile 2](Screenshots/02.jpeg)![mobile 3](Screenshots/03.jpeg) ![mobile 4](Screenshots/04.jpeg)
 
 # Tecnologias utilizadas / # Technologies used
 
