@@ -9,7 +9,7 @@ The objective of the game is to simulate the initial concept of the Million Show
 
 # Sobre o projeto
 Quiz do milhão é uma aplicação front end web responsiva com telas mobile.
-Esta aplicação web consiste em oferecer prêmios fictícios em Rais (BRL) e foi inspirada no jogo Show do Milhão. 
+Esta aplicação web consiste em oferecer prêmios fictícios em Reais (BRL) e foi inspirada no jogo Show do Milhão. 
 
 *Show do Milhão foi um programa de televisão brasileiro de perguntas e respostas, que concedia um prêmio máximo de um milhão de reais. A atração era exibida pelo canal de televisão SBT e apresentada por Silvio Santos.   
 
@@ -25,7 +25,7 @@ This web application consists of several fictional prizes in Rais (BRL) and was 
 ![Web 2](Screenshots/w03.PNG)
 
 ## Layout mobile
-![Mobile 1](Screenshots/01.jpeg) ![Mobile 2](Screenshots/02.jpeg)![mobile 3](Screenshots/03.jpeg)
+![Mobile 1](Screenshots/01.jpeg) ![Mobile 2](Screenshots/02.jpeg)![mobile 3](Screenshots/03.jpeg)![mobile 4](Screenshots/04.jpeg)
 
 # Tecnologias utilizadas / # Technologies used
 

@@ -24,14 +24,17 @@ function setAvailableQuestions(){
 	const totalquestion = quiz.length; //quiz é o array json do documento question.js
 	for(let i=0; i < totalquestion; i++){
 		availableQuestions.push(quiz[i]);
-		//console.log(quiz[i],quizV);
-		//console.log([i],quizV[15]);
 		//availableQuestions = [i];
 		//console.log(availableQuestions = [i]);
 	}
 }
 
 function getNewQuestion(){
+	
+	if(questionCounter!=0){
+	answersIndicatorConteiner.innerHTML = "Seu prémio atual é de " + premio + " mil!";
+	}
+	
 	questionNumber.innerHTML = " Pergunta de número " + (questionCounter +1);
 	
 	const questionIndex = availableQuestions[questionCounter];
@@ -143,7 +146,7 @@ function getResult(element){
 			//finalBox.classList.remove("hide");
 			setTimeout(function() { closeBox.classList.add("hide");}, 1000);
 			//setTimeout(function() { closeBox.classList.add("hide");}, 10000);
-			setTimeout(function() { finalBox.querySelector(".total-premio").innerHTML =" 1 MILHÃO DE REAIS! ";}, 3500);
+			setTimeout(function() { finalBox.querySelector(".total-premio").innerHTML =" 1 MILHÃO DE REAIS! ";}, 3250);
 	        
 			document.querySelector(".next-question-btn").remove();// remove os button para encerrar o jogo
 			
@@ -155,7 +158,7 @@ function getResult(element){
 		//answersIndicatorConteiner.innerHTML = " seu prémio atual é de " + premio + " mil!" ;
 		}
 		else {
-			answersIndicatorConteiner.innerHTML = " Certa resposta!" + " seu prémio atual é de " + premio + " mil!" ;
+			answersIndicatorConteiner.innerHTML = " Certa resposta!" + " Seu prémio atual é de " + premio + " mil!" ;
 
 		}
 		

@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 body{
 	margin: 4px;
 	font-size: 20px;
-	height: 533px ; /*547px, 596px  , 538px*/
+	height: 596px ; /*547px, , 533px , 538px*/
 	background-color: #ffffff;
-	background-image: linear-gradient(to bottom right, #ccffff, #003b3b  200%);
-	/*background-image: linear-gradient(to bottom right, #ccffff, black);
-	  background-image: linear-gradient(150deg, #97c74e 0%, #2ab9a5 );*/
+	background-image: linear-gradient(to bottom right, #2ab9a5, #6699ff 200%);
+	
+	
 }
 
 *{
@@ -15,7 +17,7 @@ body{
 	margin:0px;
 	padding:0px;
 	outline: nome;
-	font-family: 'Bangers', cursive;
+	font-family: 'Raleway', sans-serif;
 	font-size: 25px;
 	color: #000000;
 
@@ -57,24 +59,10 @@ body{
 
 
 
-.btn{
+.btnNext{
 	
-	padding: 10px 45px;
-	background-color: #009688;
-	color: #ffffff;
-	border: nome;
-	border-radius: 5px;
-	font-size:16px;
-	cursor: pointer;
-    display: inherit;	/* ou display: inline-block */
-	position:static; 
-	
-}
-
-.btn2{
-	
-	padding: 10px 51px;
-	background-color: #009688;
+	padding: 10px 42px;
+	background-color: #75bb09;
 	color: #ffffff;
 	border: nome;
 	border-radius: 5px;
@@ -82,7 +70,21 @@ body{
 	cursor: pointer;
     display: inherit;	/* ou display: inline-block */
 	float: right;
-	margin-top: -41px;
+	position:static;
+	
+}
+
+.btnStop{
+	
+	padding: 10px 45px;
+	background-color: #ff1200bf;
+	color: #ffffff;
+	border: nome;
+	border-radius: 5px;
+	font-size:16px;
+	cursor: pointer;
+    display: inherit;	/* ou display: inline-block */
+	 
 	
 }
 
@@ -225,7 +227,7 @@ body{
 
 
 @keyframes fadeIn{
-	80%{
+	20%{
 		opacity:0;
 	}
 	100%{
