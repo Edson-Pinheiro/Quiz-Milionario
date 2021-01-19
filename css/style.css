@@ -7,7 +7,8 @@ body{
 	font-size: 20px;
 	height: 596px ; /*547px, , 533px , 538px*/
 	background-color: #ffffff;
-	background-image: linear-gradient(to bottom right, #2ab9a5, #6699ff 200%);
+	/*background-image: linear-gradient(to bottom right, #2ab9a5, #6699ff 200%);*/
+	background-image: linear-gradient(to bottom right, #15ffba, #00b4ff);
 	
 	
 }
@@ -25,7 +26,7 @@ body{
 
 .custom-box{
 	max-width: 700px;
-	background-color: #888886b8;
+	background-color: #6c6f6e8a;
 	margin: 40px auto;
 	padding: 30px;
 	border-radius: 10px;
@@ -92,8 +93,8 @@ body{
 .btnReset{
 	
 	padding: 1px 4px;
-	background-color: #6c6f6e00; /*#6c6f6e;*/
-	color: #ffffff;
+	background-color: #0ecaaf; /*#6c6f6e;*/
+	color: #232927;
 	border: nome;
 	border-radius: 5px;
 	font-size:19px;
@@ -102,12 +103,16 @@ body{
 	position:absolute; 
     top:97.5%;
     left:50%;
-    transform: translate(-50%, -50%);
-	
-   
+    transform: translate(-50%, -50%);	
+}
+
+.btnNext:hover, .btnStop:hover{
+	transform: scale(1.03);
 }
 
 .button:hover {opacity: 1}
+
+
 .btnReset:active {
   background-color: #66ff66;
  }
@@ -157,7 +162,11 @@ body{
 
 }
 
-.quiz-box .option-container{}
+
+
+.quiz-box .option-container .option:hover{
+	transform: scale(1.05);
+}
 
 .quiz-box .option-container .option{
 	background-color: #ffffff;

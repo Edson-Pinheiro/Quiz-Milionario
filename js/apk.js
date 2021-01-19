@@ -13,7 +13,7 @@ const btn = document.querySelector(".next-question-btn");
 
 //const resultBox = document.querySelector(".result-box");
 
-//declaração das variavies locais
+//declaração das variavies 
 let questionCounter = 0; // para contar as questões
 let currentQuestion; // aponta para a questão atual
 let availableQuestions = []; // array de perguntas
@@ -23,11 +23,12 @@ let availableOptions = []; // array para listar as respostas
 function setAvailableQuestions(){
 	const totalquestion = quiz.length; //quiz é o array json do documento question.js
 	for(let i=0; i < totalquestion; i++){
-		availableQuestions.push(quiz[i]);
+		availableQuestions.push(quiz[i]); 
 		//availableQuestions = [i];
 		//console.log(availableQuestions = [i]);
 	}
 }
+
 
 function getNewQuestion(){
 	
@@ -64,62 +65,35 @@ for (let i=0 ; i<optionLen ; i ++){
 		
 		const option = document.createElement("div");
 		option.innerHTML = currentQuestion.options[optonIndex];
-		option.id = optonIndex;
+		option.id = optonIndex; 
 		option.className = "option";
-		optionContainer.appendChild(option)
+		optionContainer.appendChild(option);
 		option.setAttribute("onclick","getResult(this)");
+		
 	
 	}
 	questionCounter++;
-	console.log(questionCounter);
+	//console.log(questionCounter);
 	
 	
 	//console.log(availableOptions);
 	//console.log(currentQuestion.options)	
 	//console.log(index1);
-	console.log(questionIndex);
+	//console.log(questionIndex);
 	//console.log(availableQuestions);
-	
-	
-}
-
-
-function next(){
-	
-	if (questionCounter === quiz.length){
-				
-		console.log("estourou o vetor");
-		
-	}
-	else {
-		getNewQuestion();
-		
-	}
-
-}
-
-var premio = 0;
-function stop(){
-
-	
-	answersIndicatorConteiner.innerHTML = " Seu prémio é de " + premio + " mil " ;
-   	closeBox.classList.add("hide"); // fecha a tela de perguntas.
-    
-	finalBox.classList.remove("hide");
-	finalBox.querySelector(".total-premio").innerHTML = premio + " mil";
-	
-	document.getElementById("author").innerHTML='Desenvolvido por @Edson Pinheiro';
 }
 
 
 // verifica se a resposta está correta
+var nextbtn; // verifica se alguma alternativa foi selecionada
 function getResult(element){
 	const id = parseInt(element.id);
+	
 	
 	if(id === currentQuestion.answer){
 		console.log(" Certa resposta! :)");
 		element.classList.add("correta");
-		
+		//console.log(element.id);
 		// Atualisa o prémio
 		if (questionCounter <6){
 			premio ++;
@@ -166,7 +140,8 @@ function getResult(element){
 			
 	}
 	else{ // ERRADA
-		console.log(" Resposta errada. :(");
+		console.log(" Resposta errada. :("); 
+		//console.log(element.id);
 		element.classList.add("errada");
 		premio = premio /2; // divide o prémio se errar
 		answersIndicatorConteiner.innerHTML = " Resposta errada. Seu prémio é de " + premio + " mil !" ;
@@ -176,7 +151,7 @@ function getResult(element){
 		}
 	
 		
-		
+	
 		const optionLen = optionContainer.children.length;
 		for (let i=0;i<optionLen;i++){
 			if (parseInt(optionContainer.children[i].id)=== currentQuestion.answer){
@@ -195,7 +170,8 @@ function getResult(element){
 
 
 	}
-	
+	nextbtn = element.id; 
+	console.log(nextbtn)
 			
 	//const id = parseInt(element.id);
 	//console.log(typeof id);
@@ -203,6 +179,35 @@ function getResult(element){
     //console.log(element.id);	//mostra o número (13:30)
 	
 	unclickableOptions();
+}
+
+
+var premio = 0;
+function stop(){
+
+	
+	answersIndicatorConteiner.innerHTML = " Seu prémio é de " + premio + " mil " ;
+   	closeBox.classList.add("hide"); // fecha a tela de perguntas.
+    
+	finalBox.classList.remove("hide");
+	finalBox.querySelector(".total-premio").innerHTML = premio + " mil";
+	
+	document.getElementById("author").innerHTML='Desenvolvido por @Edson Pinheiro';
+}
+
+
+function next(){
+	//console.log(id)
+	console.log(nextbtn)
+	if ((questionCounter === quiz.length)||(nextbtn == null)){
+		window.alert("VOCÊ PRECISA RESPONDER");		
+		console.log("estourou o vetor");
+	}
+	else {
+		getNewQuestion();
+		
+	}
+nextbtn = null; //limpa a variavel para comparar novamente
 }
 
 
@@ -220,8 +225,9 @@ function unclickableOptions(){
 
 
 window.onload = function(){
-	setAvailableQuestions(); // setAvailableQuestions()
-	getNewQuestion();
+	setAvailableQuestions(); // busca as respostas
+	
+	getNewQuestion(); // carrega as respostas
 
 	
 	
