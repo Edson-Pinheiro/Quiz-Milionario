@@ -192,7 +192,7 @@ function stop(){
 	finalBox.classList.remove("hide");
 	finalBox.querySelector(".total-premio").innerHTML = premio + " mil";
 	
-	document.getElementById("author").innerHTML='Desenvolvido por @Edson Pinheiro';
+	//document.getElementById("author").innerHTML='Desenvolvido por @Edson Pinheiro';
 }
 
 
@@ -200,8 +200,8 @@ function next(){
 	//console.log(id)
 	console.log(nextbtn)
 	if ((questionCounter === quiz.length)||(nextbtn == null)){
-		window.alert("VOCÊ PRECISA RESPONDER");		
-		console.log("estourou o vetor");
+		window.alert("Você precisa responder!");		
+		//console.log("estourou o vetor");
 	}
 	else {
 		getNewQuestion();
@@ -228,8 +228,4 @@ window.onload = function(){
 	setAvailableQuestions(); // busca as respostas
 	
 	getNewQuestion(); // carrega as respostas
-
-	
-	
-	
 }

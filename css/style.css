@@ -62,10 +62,12 @@ body{
 
 .btnNext{
 	
-	padding: 10px 42px;
-	background-color: #75bb09;
+	padding: 10px 35px;
+	background-color: #75bb0903;
 	color: #ffffff;
 	border: nome;
+	border-style: solid;
+    border-color: #75bb09;
 	border-radius: 5px;
 	font-size:16px;
 	cursor: pointer;
@@ -78,9 +80,11 @@ body{
 .btnStop{
 	
 	padding: 10px 45px;
-	background-color: #ff1200bf;
+	background-color: #ea170700;
 	color: #ffffff;
 	border: nome;
+	border-style: solid;
+    border-color: #e43a2d;
 	border-radius: 5px;
 	font-size:16px;
 	cursor: pointer;
@@ -89,26 +93,41 @@ body{
 	
 }
 
+.btnStop:hover{
+	transition-duration: 0.4s;
+	transform: scale(1.04);
+	color: #ea1707;
+	border-color: #ea1707;
+	background-color: #40a29f;
+}
+
+.btnNext:hover{
+	transition-duration: 0.4s;
+	transform: scale(1.04);
+	color: #9bff00;
+	border-color: #8fe40b;
+	background-color: #3e9ca5;
+}
+
+
 
 .btnReset{
-	
 	padding: 1px 4px;
-	background-color: #0ecaaf; /*#6c6f6e;*/
-	color: #232927;
-	border: nome;
-	border-radius: 5px;
-	font-size:19px;
+	background-color: #19a9da; /*#6c6f6e;*/
+	color: #15febb;
+	border-style: solid;
+    border-color: #6c6f6e00;
+	border-radius: 20px;
+	font-size:15px;
 	cursor: pointer;
-    /*  display: inline-block */
-	position:absolute; 
-    top:97.5%;
-    left:50%;
-    transform: translate(-50%, -50%);	
+	/*  display: inline-block */
+	position:absolute;
+	top:97.5%;
+	left:50%;
+	transform: translate(-50%, -50%);
 }
 
-.btnNext:hover, .btnStop:hover{
-	transform: scale(1.03);
-}
+
 
 .button:hover {opacity: 1}
 
@@ -165,6 +184,7 @@ body{
 
 
 .quiz-box .option-container .option:hover{
+	transition-duration: 0.4s;
 	transform: scale(1.05);
 }
 
