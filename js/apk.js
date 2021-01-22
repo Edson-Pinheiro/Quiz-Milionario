@@ -184,7 +184,12 @@ function getResult(element){
 
 var premio = 0;
 function stop(){
-
+	console.log(questionCounter);
+	if (questionCounter == 1 ){
+		window.alert("Você pode parar somente após a esta primeira pergunta! ");		
+		
+	}
+	else{
 	
 	answersIndicatorConteiner.innerHTML = " Seu prémio é de " + premio + " mil " ;
    	closeBox.classList.add("hide"); // fecha a tela de perguntas.
@@ -193,6 +198,8 @@ function stop(){
 	finalBox.querySelector(".total-premio").innerHTML = premio + " mil";
 	
 	//document.getElementById("author").innerHTML='Desenvolvido por @Edson Pinheiro';
+    }
+	
 }
 
 

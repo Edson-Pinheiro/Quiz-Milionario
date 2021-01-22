@@ -2,6 +2,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
+*{
+	box-sizing: border-box;
+	margin:0px;
+	padding:0px;
+	outline: nome;
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	color: #000000;
+
+}
+
 body{
 	margin: 4px;
 	font-size: 20px;
@@ -13,16 +24,7 @@ body{
 	
 }
 
-*{
-	box-sizing: border-box;
-	margin:0px;
-	padding:0px;
-	outline: nome;
-	font-family: 'Raleway', sans-serif;
-	font-size: 25px;
-	color: #000000;
 
-}
 
 .custom-box{
 	max-width: 700px;
