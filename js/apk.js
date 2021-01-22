@@ -86,6 +86,7 @@ for (let i=0 ; i<optionLen ; i ++){
 
 // verifica se a resposta está correta
 var nextbtn; // verifica se alguma alternativa foi selecionada
+
 function getResult(element){
 	const id = parseInt(element.id);
 	
@@ -144,10 +145,19 @@ function getResult(element){
 		//console.log(element.id);
 		element.classList.add("errada");
 		premio = premio /2; // divide o prémio se errar
-		answersIndicatorConteiner.innerHTML = " Resposta errada. Seu prémio é de " + premio + " mil !" ;
-        if (questionCounter ==16){
+		answersIndicatorConteiner.innerHTML = " Você ERROU! Tente outra vez, você consegue. " ;
+        if (questionCounter > 1){
+			answersIndicatorConteiner.innerHTML = " Você ERROU! Seu prémio é de " + premio + " mil !" ;
+		}
+		
+		if (questionCounter == 2){
+			answersIndicatorConteiner.innerHTML = " Você ERROU! Recebe 500,00 Reais!" ;
+		}
+		
+		
+		if (questionCounter ==16){
 			premio=0;
-			answersIndicatorConteiner.innerHTML = " Você errou! Que pena, perdeu tudo! Tente mais uma vez! :)";
+			answersIndicatorConteiner.innerHTML = " Você ERROU! Que pena, perdeu tudo! Tente mais uma vez! :)";
 		}
 	
 		
@@ -155,13 +165,13 @@ function getResult(element){
 		const optionLen = optionContainer.children.length;
 		for (let i=0;i<optionLen;i++){
 			if (parseInt(optionContainer.children[i].id)=== currentQuestion.answer){
-				optionContainer.children[i].classList.add("correta");
+				optionContainer.children[i].classList.add("correta"); // mostra qual é a resposta certa
 				
 				
-			 document.querySelector(".next-question-btn").remove();// remove os button para encerrar o jogo
+			 document.querySelector(".next-question-btn").remove();// remove os botoes para encerrar o jogo
 			 //closeBox.classList.add("hide"); // fecha a tela de perguntas.
-			 finalBox2.classList.remove("hide");
-	         finalBox.querySelector(".total-premio").innerHTML = premio + " mil";
+			 finalBox2.classList.remove("hide"); // libera o botão de remomeçar
+	        // finalBox.querySelector(".total-premio").innerHTML = premio + " mil";
              
 			}
 		}

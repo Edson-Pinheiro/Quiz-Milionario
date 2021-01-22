@@ -80,7 +80,7 @@ var quiz = [
 
  
 {                        // Pergunta do Milhão
-	q:'Qual organização juvenil foi fundado por Baden-Powell?',
+	q:'Qual organização juvenil foi fundada por Baden-Powell?',
     options:['A juventude socialista','O escotismo','O clube dos aventureiros','A Organização mundial da juventude'],
     answer:1	
 } 

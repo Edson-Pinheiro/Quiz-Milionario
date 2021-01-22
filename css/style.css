@@ -116,7 +116,7 @@ body{
 .btnReset{
 	padding: 1px 4px;
 	background-color: #19a9da; /*#6c6f6e;*/
-	color: #15febb;
+	color: #ffff66;
 	border-style: solid;
     border-color: #6c6f6e00;
 	border-radius: 20px;
@@ -140,7 +140,7 @@ body{
  
  #author{	
     position: absolute;
-    bottom: 5px;
+    
     right: 10px;
 	height: 39px;
     font-size: 10px;
