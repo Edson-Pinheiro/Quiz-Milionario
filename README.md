@@ -39,6 +39,8 @@ This web application consists of several fictional prizes in Reais (BRL) and was
 
 # Como executar o projeto / How to run the project
 
+https://quizmilionario.vercel.app/
+
 ```bash
 # clonar repositório
 git clone https://github.com/Edson-Pinheiro/Quiz-do-Milhao
