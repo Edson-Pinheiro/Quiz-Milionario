@@ -40,7 +40,7 @@ function getNewQuestion(){
 	
 	const questionIndex = availableQuestions[questionCounter];
 	currentQuestion = questionIndex;
-	questionText.innerHTML = currentQuestion.q; // aqui mostra pergunta na tela apontando ao 'q' do documento 'question.js'
+	questionText.innerHTML = currentQuestion.question; // aqui mostra pergunta na tela apontando ao 'question' do documento 'question.js'
 	console.log(questionIndex)
 	
 	const optionLen = currentQuestion.options.length;
@@ -161,11 +161,11 @@ function getResult(element){
 		}
 	
 		
-	
+	    
 		const optionLen = optionContainer.children.length;
 		for (let i=0;i<optionLen;i++){
 			if (parseInt(optionContainer.children[i].id)=== currentQuestion.answer){
-				optionContainer.children[i].classList.add("correta"); // mostra qual é a resposta certa
+				//optionContainer.children[i].classList.add("correta"); // mostra qual é a resposta certa
 				
 				
 			 document.querySelector(".next-question-btn").remove();// remove os botoes para encerrar o jogo
