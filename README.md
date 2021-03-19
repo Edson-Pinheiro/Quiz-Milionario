@@ -29,8 +29,6 @@ This web application consists of several fictional prizes in Reais (BRL) and was
 
 # Tecnologias utilizadas / # Technologies used
 
-## Back end
-*Em desenvolviemento / * In development
 
 ## Front end
 - HTML
