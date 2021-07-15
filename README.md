@@ -43,9 +43,9 @@ https://quizmilionario.vercel.app/
 # clonar repositório
 git clone https://github.com/Edson-Pinheiro/Quiz-do-Milhao
 
-# entrar na pasta do projeto e execucar o arquivo 'quiz.html'
+# entrar na pasta do projeto e execucar o arquivo 'index.html'
 (cmd)
-start quiz.html
+start index.html
 ```
 
 # Autor / Author
